@@ -1,0 +1,29 @@
+[PASS] Source dataset: /kaggle/input/datasets/sunawarkhan/reproducibility-package
+[PASS] Source: kaggle_hagdcp.py: SHA256=f912a1a90f3bdc3243dbcab6a02c21f0e2096f91d5806002fb76b410148a8ef6
+[PASS] Source: reproduce_all.py: SHA256=bc618894102b55f1673f9759f2fe0b7e41434852c12669d42ab21149d791f026
+[PASS] Source: check_claims.py: SHA256=4dc70cdb59f40aa1e3fb16b1f272863168455644d3305830201467521c506898
+[PASS] Source: manuscript.md: SHA256=d4bb317708c1d14a823864b95fdc6e363b9604c8c006eefcdad9d3846a38b185
+[PASS] OPSD original data SHA256: path=/kaggle/input/datasets/sunawarkhan/opsd-timeseriessunawar/opsd-time_series-2020-10-06/time_series_60min_singleindex.csv; sha256=6a7f2bc571314cbf9c321cc03437691cd4be95c3a6f075e60ff99e8035c704c8
+[FAIL] Previous JSON checksum: stored=8d09f4a02bba6accdc3bc8f53c830b8c4d0cf46502d53faf1111d4f6c54f9065; calculated=262286ad0cf4a6d8510f92f82d50673f0eab4b400bf5a5b346d135cac692b0d1
+[PASS] Raw statistics instrumentation: 20 seeds and 5 instances captured
+[PASS] Fresh experiment execution: exit=0; runtime=204.85s
+[PASS] Fresh authoritative checksum: stored=ffae6743c58a418311fc66b01cd4fba06bf03834a5fd63cb10703bd5cdbdb282; calculated=ffae6743c58a418311fc66b01cd4fba06bf03834a5fd63cb10703bd5cdbdb282
+[PASS] stats_20seed raw statistical verification: n=20; QAOA median=0.17598888; SA median=0.41508793; Wilcoxon p=0.09730721
+[PASS] stats_5instance raw statistical verification: n=5; QAOA median=0.71393090; SA median=0.76344153; Wilcoxon p=0.62500000
+[FAIL] Manuscript numerical claims: exit=1
+[PASS] Claim checker tamper self-test: exit=0
+[WARNING] Previous vs fresh: stats_20seed.QAOA_median: previous=0.228; fresh=0.176
+[PASS] Previous vs fresh: stats_20seed.SA_median: previous=0.415; fresh=0.415
+[WARNING] Previous vs fresh: stats_20seed.wilcoxon_p: previous=0.33; fresh=0.0973
+[PASS] Previous vs fresh: stats_5instance.QAOA_median: previous=0.714; fresh=0.714
+[PASS] Previous vs fresh: stats_5instance.SA_median: previous=0.763; fresh=0.763
+[PASS] Previous vs fresh: stats_5instance.wilcoxon_p: previous=0.625; fresh=0.625
+[WARNING] Previous vs fresh: heldout.max_gap: previous=0.176; fresh=0.0
+
+SUMMARY
+{
+  "PASS": 16,
+  "FAIL": 2,
+  "WARNING": 3,
+  "NOT VERIFIED": 0
+}

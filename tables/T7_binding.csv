@@ -1,0 +1,7 @@
+metric,value
+base_cost,326.6
+hard_cost,727.9
+lower_bound_active_hrs,9
+h2aware_cut,0.3815
+temporal_cut,0.4324
+cut_improvement_pct,11.8;11.4;11.9

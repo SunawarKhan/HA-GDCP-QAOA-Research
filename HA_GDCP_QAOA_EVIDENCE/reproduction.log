@@ -1,0 +1,13 @@
+[1/10] E0
+[2/10] H1
+[3/10] encoding+surrogate
+[4/10] mixer
+[5/10] partition
+[6/10] binding
+[7/10] H14
+[8/10] statistics
+[9/10] E4+heldout
+[10/10] scalability
+
+WROTE results_authoritative.json (14 sections, 203.1s)
+sections: ['E0', 'data', 'H1', 'encoding', 'surrogate', 'mixer', 'partition', 'binding', 'H14', 'stats_20seed', 'stats_5instance', 'E4', 'heldout', 'scalability']

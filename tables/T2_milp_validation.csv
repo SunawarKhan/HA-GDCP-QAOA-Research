@@ -1,0 +1,10 @@
+metric,value
+opt_6h_EUR,114.5353
+feasible_patterns,3313/4096
+resid_elec,5.684341886080802e-14
+resid_heat,1.4210854715202004e-14
+resid_h2,9.992007221626409e-16
+dual_formulation_agree,True
+pct_H2_served,100.0
+pct_heat_served,100.0
+simultaneous_import_export_hrs,0

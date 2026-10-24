@@ -1,0 +1,6 @@
+partition,post_repair_gap_%,recourse_calls,peak_qubits,two_qubit_gates
+temporal,-0.0,197,12,1056
+h2aware,-0.0,249,12,1056
+random,-0.0,257,12,1056
+carrier,-0.0,227,6,480
+metis-like,-0.0,187,12,876

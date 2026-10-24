@@ -1,0 +1,8 @@
+metric,value
+qubo_ising_maxerr,2.5579538487363607e-13
+spearman_min,0.912
+spearman_max,0.93
+oos_rmse_min,12.24
+oos_rmse_max,13.46
+top5_recall,0.0
+regret_eur,1.764

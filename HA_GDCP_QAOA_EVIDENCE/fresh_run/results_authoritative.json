@@ -1,0 +1,299 @@
+{
+  "E0": {
+    "opt_6h": 114.5353,
+    "feasible_patterns": 3313,
+    "total_patterns": 4096,
+    "resid_elec": 5.684341886080802e-14,
+    "resid_heat": 1.4210854715202004e-14,
+    "resid_h2": 9.992007221626409e-16,
+    "dual_formulation_agree": true,
+    "pct_h2_served": 100.0,
+    "pct_heat_served": 100.0,
+    "simultaneous_grid_hrs": 0,
+    "simultaneous_el_fc_hrs": 0
+  },
+  "data": {
+    "rows": 8760,
+    "neg_price_hours": 211,
+    "dev": 5832,
+    "val": 1464,
+    "test": 1464
+  },
+  "H1": {
+    "days_checked": 20,
+    "status_breakdown": {
+      "Optimal": 20
+    },
+    "unbounded": 0
+  },
+  "encoding": {
+    "qubo_ising_maxerr": 2.5579538487363607e-13,
+    "spearman_min": 0.912,
+    "spearman_max": 0.93,
+    "oos_rmse_min": 12.24,
+    "oos_rmse_max": 13.46
+  },
+  "surrogate": {
+    "top1_recall": 0,
+    "top5_recall": 0.0,
+    "regret_eur": 1.764
+  },
+  "mixer": {
+    "X_valid_rate": 0.0625,
+    "XY_valid_rate": 1.0,
+    "init": "one-hot both (controlled)"
+  },
+  "partition": {
+    "T6": {
+      "h2aware_cut": 0.0,
+      "temporal_cut": 0.0,
+      "R_Q": 0.0
+    },
+    "T12": {
+      "h2aware_cut": 0.1818,
+      "temporal_cut": 0.2047,
+      "R_Q": 50.0
+    },
+    "T24": {
+      "h2aware_cut": 0.3815,
+      "temporal_cut": 0.4324,
+      "R_Q": 75.0
+    },
+    "T48": {
+      "h2aware_cut": 0.6032,
+      "temporal_cut": 0.6411,
+      "R_Q": 87.5
+    }
+  },
+  "binding": {
+    "base_cost": 326.6,
+    "hard_cost": 727.9,
+    "lower_bound_active_hrs": 9,
+    "h2aware_cut": 0.3815,
+    "temporal_cut": 0.4324,
+    "cut_improvement_pct": [
+      11.8,
+      11.4,
+      11.9
+    ]
+  },
+  "H14": {
+    "milp_24h": 326.58,
+    "temporal": {
+      "gap": -0.0,
+      "recourse": 197,
+      "peak_qubits": 12,
+      "two_qubit_gates": 1056,
+      "circuit_evals": 719
+    },
+    "h2aware": {
+      "gap": -0.0,
+      "recourse": 249,
+      "peak_qubits": 12,
+      "two_qubit_gates": 1056,
+      "circuit_evals": 800
+    },
+    "random": {
+      "gap": -0.0,
+      "recourse": 257,
+      "peak_qubits": 12,
+      "two_qubit_gates": 1056,
+      "circuit_evals": 800
+    },
+    "carrier": {
+      "gap": -0.0,
+      "recourse": 227,
+      "peak_qubits": 6,
+      "two_qubit_gates": 480,
+      "circuit_evals": 1415
+    },
+    "metis-like": {
+      "gap": -0.0,
+      "recourse": 187,
+      "peak_qubits": 12,
+      "two_qubit_gates": 876,
+      "circuit_evals": 1186
+    }
+  },
+  "stats_20seed": {
+    "instance": "2019-01-15 06:00",
+    "QAOA_median": 0.176,
+    "SA_median": 0.415,
+    "wilcoxon_p": 0.0973,
+    "n": 20,
+    "raw": {
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "qaoa_gaps_pct": [
+        0.18157732591205233,
+        0.33524235742232406,
+        1.4007099772511882,
+        0.46393628043770685,
+        1.4113070557031802,
+        0.17598888424852688,
+        0.013998111883490023,
+        0.2751729062868784,
+        1.569829809859434,
+        0.07262301436548807,
+        0.013998111883490023,
+        0.026698317278590584,
+        0.07262301436548807,
+        0.0,
+        0.17598888424852688,
+        0.18157732591205233,
+        0.07262301436548807,
+        0.144612839720012,
+        0.12318170331979307,
+        1.4320190958355388
+      ],
+      "sa_gaps_pct": [
+        0.14308822601145596,
+        1.5886938174806282,
+        0.026698317278590584,
+        0.12318170331979307,
+        0.3662395835219161,
+        1.379906656981361,
+        0.14308822601145596,
+        1.4153193131381023,
+        1.440747755052414,
+        0.46393628043770685,
+        1.4095219749507029,
+        0.15014662011391916,
+        1.4140159161029868,
+        1.5402843393381307,
+        0.14308822601145596,
+        0.2751729062868784,
+        2.168727207538659,
+        0.2751729062868784,
+        1.4644981591745487,
+        0.013998111883490023
+      ]
+    }
+  },
+  "stats_5instance": {
+    "QAOA_median": 0.714,
+    "SA_median": 0.763,
+    "wilcoxon_p": 0.625,
+    "n": 5,
+    "raw": {
+      "instances": [
+        "2019-01-15 06:00",
+        "2019-03-10 06:00",
+        "2019-05-20 06:00",
+        "2019-07-15 06:00",
+        "2019-08-25 06:00"
+      ],
+      "qaoa_gaps_pct": [
+        0.013998111883490023,
+        2.4043881609874442,
+        0.7139308967198862,
+        0.13969378631471263,
+        3.888212155028126
+      ],
+      "sa_gaps_pct": [
+        1.5886938174806282,
+        0.41771798892796724,
+        1.0494412545584744,
+        0.08292660717889759,
+        0.7634415294713052
+      ]
+    }
+  },
+  "E4": {
+    "LB_6h": 114.5353,
+    "QAOA_feas_rate": 0.783,
+    "QAOA_gap": 0.014
+  },
+  "heldout": {
+    "gaps": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "max_gap": 0.0
+  },
+  "scalability": {
+    "T48_R_Q": 87.5,
+    "T48_peak_qubits": 12,
+    "T48_two_qubit_gates": 2112,
+    "T48_circuit_evals": 1400
+  },
+  "_meta": {
+    "model": "kaggle_hagdcp.py",
+    "seed": 2026,
+    "timestamp": "2026-10-24T11:02:10Z",
+    "runtime_s": 203.1,
+    "dataset_file": "/kaggle/input/datasets/sunawarkhan/opsd-timeseriessunawar/opsd-time_series-2020-10-06/time_series_60min_singleindex.csv",
+    "dataset_sha256": "6a7f2bc571314cbf9c321cc03437691cd4be95c3a6f075e60ff99e8035c704c8",
+    "dependencies": {
+      "python": "3.13.15",
+      "numpy": "2.1.3",
+      "scipy": "1.16.3",
+      "pandas": "2.3.3",
+      "networkx": "3.6.1",
+      "qiskit": "1.4.6",
+      "highspy": "?"
+    },
+    "params": {
+      "Pel_max": 100.0,
+      "Pel_min": 20.0,
+      "Pfc_max": 60.0,
+      "Pfc_min": 12.0,
+      "Php_max": 90.0,
+      "eta_el": 0.65,
+      "eta_fc": 0.5,
+      "e_H": 33.33,
+      "R_el": 60.0,
+      "Hmin": 0.0,
+      "Hmax": 50.0,
+      "H0": 10.0,
+      "Hterm": 10.0,
+      "self_discharge": 0.0,
+      "cdeg_el": 0.004,
+      "cdeg_fc": 0.006,
+      "cstart": 0.05,
+      "lamH": 5.0,
+      "lamQ": 0.3,
+      "csell": 0.9,
+      "dt": 1.0,
+      "Pgrid_max": 500.0
+    },
+    "sections": [
+      "E0",
+      "data",
+      "H1",
+      "encoding",
+      "surrogate",
+      "mixer",
+      "partition",
+      "binding",
+      "H14",
+      "stats_20seed",
+      "stats_5instance",
+      "E4",
+      "heldout",
+      "scalability"
+    ],
+    "results_sha256": "ffae6743c58a418311fc66b01cd4fba06bf03834a5fd63cb10703bd5cdbdb282"
+  }
+}

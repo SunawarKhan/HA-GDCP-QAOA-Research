@@ -1,0 +1,5 @@
+field,value
+source,OPSD time_series 2020-10-06
+rows,8760
+negative_price_hours,211
+dev/val/test,5832/1464/1464

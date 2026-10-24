@@ -1,0 +1,35 @@
+HA-GDCP-QAOA VERIFICATION REPORT
+======================================================================
+Timestamp: 2026-10-24T10:30:36.719312+00:00
+
+[PASS] Authoritative results: /kaggle/working/results_authoritative.json
+[PASS] OPSD dataset SHA-256: actual=6a7f2bc571314cbf9c321cc03437691cd4be95c3a6f075e60ff99e8035c704c8; expected=6a7f2bc571314cbf9c321cc03437691cd4be95c3a6f075e60ff99e8035c704c8
+[FAIL] Results JSON checksum: calculated=a14698445bef84f643b352213664d3ab381a25aba913a97da70d81059e9e304b; stored=7cd114f587e0780f5095a9c8b7c802793fe106f00a353bebbcc3d545529c2862
+[PASS] All 14 experiment sections: Complete
+[PASS] Exact MILP / LP agreement: optimum=114.5353
+[PASS] Physical balance residuals: Electricity, heat and hydrogen residuals below 1e-8
+[PASS] Demand satisfaction: Hydrogen and heat demand served
+[PASS] QUBO-Ising equivalence: 2.5579538487363607e-13
+[PASS] XY mixer validity: 1.0
+[PASS] 48-hour peak qubit reduction: 87.5
+[NOT VERIFIED] Independent experiment recomputation: Sanity checks inspect saved values; they do not rerun MILP/QAOA.
+[NOT VERIFIED] stats_20seed raw statistics: Raw paired QAOA/SA gaps missing. Save per-seed data.
+[NOT VERIFIED] stats_5instance raw statistics: Raw paired QAOA/SA gaps missing. Save per-seed data.
+[WARNING] Previous manuscript: stats_20seed.QAOA_median: manuscript/reference=0.228, latest JSON=0.176
+[PASS] Previous manuscript: stats_20seed.SA_median: manuscript/reference=0.415, latest JSON=0.415
+[WARNING] Previous manuscript: stats_20seed.wilcoxon_p: manuscript/reference=0.33, latest JSON=0.0973
+[PASS] Previous manuscript: stats_5instance.wilcoxon_p: manuscript/reference=0.625, latest JSON=0.625
+[WARNING] Previous manuscript: heldout.max_gap: manuscript/reference=0.176, latest JSON=0.0
+[PASS] File available: kaggle_hagdcp.py: /kaggle/working/kaggle_hagdcp.py
+[PASS] File available: reproduce_all.py: /kaggle/working/reproduce_all.py
+[PASS] File available: check_claims.py: /kaggle/working/check_claims.py
+[PASS] File available: manuscript.md: /kaggle/working/manuscript.md
+[FAIL] Numerical manuscript claim checker: exit_code=1
+
+SUMMARY
+{
+  "PASS": 15,
+  "FAIL": 2,
+  "WARNING": 3,
+  "NOT VERIFIED": 3
+}

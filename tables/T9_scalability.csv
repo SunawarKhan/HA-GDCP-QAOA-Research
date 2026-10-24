@@ -1,0 +1,6 @@
+metric,value
+T48_R_Q_%,87.5
+T48_peak_qubits,12
+T48_two_qubit_gates,2112
+T48_circuit_evals,1400
+heldout_max_gap_%,0.0
