@@ -1,3 +1,0 @@
---- SELF-TEST: injected wrong optimum (999.999); checker must FAIL ---
-tamper detected: YES (checker caught it)
-
